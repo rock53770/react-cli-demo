@@ -1,0 +1,67 @@
+﻿//switch默认背景更改
+.van-switch--on{
+  background-color: @primary;
+}
+.van-notice-bar{
+  height:32px;
+}
+//confirm弹出框按钮颜色
+.van-dialog__confirm,.van-dialog__confirm:active{
+  color:@primary;
+}
+.van-picker__cancel, .van-picker__confirm {
+  color: @primary;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.van-picker__title{
+  font-size: 16px;
+}
+// .van-cell__value{
+//   color: @primary;
+// }
+.van-cell__title{
+  display: flex;
+  align-items: center;
+}
+
+.van-radio .van-icon-checked{
+  color:@primary;
+}
+.van-checkbox__icon--checked .van-icon{
+  color:#fff;
+  background-color:@primary;
+  border-color:@primary
+}
+.van-button{
+  height: 50px;
+  line-height: 48px;
+  font-size:16px;
+  // border-radius:5px;
+}
+
+.van-button--primary{
+  background:linear-gradient(to right, #0AACF6, #087BF5);
+  border: none;
+}
+.van-button--plain{
+  background:#fff;
+  border: 1px solid #0AACF6;
+}
+.van-button--loading{
+  opacity:0.6
+}
+.van-button--plain.van-button--primary{
+  color:@primary;
+}
+.van-button--disabled{
+  color:#fff;
+  background:@lgray;
+  border-color:@lgray;
+}
+.van-field .van-cell__title {
+  max-width: 100px;
+}
+.van-dialog__message {
+  text-align: center !important;
+}
