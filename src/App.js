@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
+import { Store }  from './reducer/store'
+
 import './App.css';
-import RouteConfigExample from './router/index.js'
+import RouteConfig from './router/index.js'
+
+
 class App extends Component {
   render() {
     return (
-      <RouteConfigExample/>
+      <Provider store={Store}>
+        <RouteConfig/>
+      </Provider>
     );
   }
 }

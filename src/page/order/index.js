@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import baseLoadable from '@loadable/component'
+import order from './order'
 
 function loadable(func) {
   return baseLoadable(func, { fallback: <div>Loading</div> })
 }
-import OrderIndex from '../view/order/index'
+
+// import OrderIndex from '../view/order/index'
 // const OrderIndex = loadable(() => import(/* webpackChunkName: "order" */`../view/order/index`))
 console.log(121212121)
 function Bus() {
@@ -42,7 +44,7 @@ function Order({ routes }) {
         </li>
       </ul>
       <Switch>
-        <Route path="/order" component={OrderIndex}  exact/>
+        <Route path="/order" component={order}  exact/>
         <Route path="/order/cart" component={Cart} />
       </Switch>
     </div>
