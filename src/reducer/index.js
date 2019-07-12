@@ -1,5 +1,5 @@
 export { default as post } from './post';
-// export { default as postListUI } from './postListUI';
+export { default as postListUI } from './postListUI';
 // export { default as postDetailUI } from './postDetailUI';
 // export { default as author } from './author';
 // export { default as authorUI } from './authorUI';

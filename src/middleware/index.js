@@ -1,4 +1,4 @@
-// import thunk from 'redux-thunk';
+import thunk from 'redux-thunk';
 // import logger from './logger';
 // import promise from './promise';
 // import common from './common';
@@ -7,7 +7,7 @@
 
 export default [
   // logger,
-  // thunk,
+  thunk,
   // promise,
   // pending,
   // callback,
